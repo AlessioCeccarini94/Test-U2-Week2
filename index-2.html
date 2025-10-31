@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/style/custom-bs/custom-bs.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-dark text-light vw-100 vh-100">
+    <header>
+      <img class="w-25 h-25" src="assets/netflix_logo.png" alt="logo" />
+    </header>
+    <main class="bg-dark">
+      <div class="text-center">
+        <h1
+          class="text-light text-center border-bottom border-2-light d-inline-block w-50"
+        >
+          Edit Profile
+        </h1>
+        <form action="#">
+          <div class="conteiner mt-5">
+            <div
+              class="row justify-content-center align-items-start text-start"
+            >
+              <div class="col col-md-2 offset-1">
+                <img class="w-75" src="assets/media/kids_icon.png" alt="" />
+              </div>
+              <div class="col me-3 col-md-3">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="bg-light text-light mx-auto fs-3 w-75"
+                />
+                <h4 class="text-light mt-3 fs-2 pt-5">Language</h4>
+                <select class="w-25 fs-5 bg-light" name="language">
+                  <option value="english">English</option>
+                  <option value="italiano">Italiano</option>
+                  <option value="spanish">Spanish</option>
+                </select>
+                <h4 class="text-light mt-3 fs-2 pt-5 border-top border-1">
+                  Maturity Settings
+                </h4>
+                <button class="bg-light">ALL MATURITY RATINGS</button>
+                <p class="pt-2">
+                  show titles of all maturity ratings for this profile
+                </p>
+                <button
+                  class="bg-dark text-light border border-light px-5 py-2"
+                >
+                  EDIT
+                </button>
+                <h4 class="text-light mt-3 fs-2 pt-3 border-top border-1">
+                  Autoplay controls
+                </h4>
+                <div class="d-flex flex-column align-items-baseline">
+                  <label class="container">
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>autoplay next episode in a
+                    series on all devices
+                  </label>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>autoplay previews while
+                    browsing on all devices
+                  </label>
+                  <div
+                    id="profile-btns"
+                    class="text-light mt-3 fs-3 pt-3 border-top border-1 w-100 d-flex justify-content-evenly"
+                  >
+                    <button class="bg-dark text-light border border-1">
+                      save
+                    </button>
+                    <button class="bg-dark text-light border border-1">
+                      cancel
+                    </button>
+                    <button class="bg-dark text-light border border-1">
+                      delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

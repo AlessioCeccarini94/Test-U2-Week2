@@ -1,0 +1,49 @@
+@import "../scss/functions";
+@import "../scss/variables";
+
+// NUOVI COLORI PERSONALIZZATI
+
+$new-theme-colors: (
+  "primary": #b50000,
+  "secondary": #ff7575,
+  "success": #ffffff,
+  "info": #fe00fa,
+  "warning": #ffe600,
+  "danger": #ff0800,
+  "light": #6d6d6d,
+  "dark": #000000,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+//aggiunti nuovi font sizes
+
+$additional-font-sizes: (
+  "7": 0.875rem,
+  "8": 0.8rem,
+  "9": 0.75rem,
+  "10": 0.7rem,
+);
+$font-sizes: map-merge($font-sizes, $additional-font-sizes);
+
+//cambiato colore link al passaggio del mouse
+
+$primary: map-get($new-theme-colors, "primary");
+a {
+  text-decoration: none !important;
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+// modificato layout carousel
+
+$caousel-display: flex;
+
+button {
+  text-decoration: none !important;
+  &:hover {
+    background-color: $primary !important;
+    color: white !important;
+  }
+}
+@import "../scss/bootstrap.scss";

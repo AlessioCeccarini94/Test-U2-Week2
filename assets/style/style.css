@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0;
+}
+header img {
+  height: 40px;
+}
+header nav {
+  width: 100%;
+}
+
+.dropdown .dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -40%;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */
