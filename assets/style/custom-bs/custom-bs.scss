@@ -46,4 +46,14 @@ button {
     color: white !important;
   }
 }
+// ESCLUDO BUTTON DEL CAROUSEL
+
+#carouselExample button {
+  text-decoration: none !important;
+  &:hover {
+    background-color: transparent !important;
+    color: white !important;
+  }
+}
+
 @import "../scss/bootstrap.scss";
